@@ -15,7 +15,18 @@ Sometimes local storage is not enough and you need more and more is complicated 
 - Files like image handling utilities
 - Configurable options to sutie your needs
 
+## Resources And Links
+
+- [MDN Docs - Using IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB)
+- [Log Rocket - IndexedDB Tutorial](https://blog.logrocket.com/using-indexeddb-complete-guide/)
+- [Web Dev - IndexedDB](https://web.dev/articles/indexeddb)
+- [FreeCodeCamp – IndexedDB Database Guide for Beginners](https://www.freecodecamp.org/news/how-indexeddb-works-for-beginners/)
+
 ## Usage
+
+How it works, you create a database instance using `createDatabase` and pass it your configuration such as stores or topics, database name, version and success and error handlers incase anything happens on connection, and this returns a db instance which you can use to interact with the database.
+
+For any crud operation, you specify the topic /store name and use methods like `create`, `read`, `update`, and `delete` to do crud operations, as you can see in example below...
 
 ``` js
 
